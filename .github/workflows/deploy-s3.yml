@@ -24,4 +24,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Deploy to Amazon S3
-        run: aws s3 sync . s3://NOMBRE-DE-TU-BUCKET --delete --exclude ".git/*" --exclude ".github/*"
+        run: aws s3 sync . s3://nexora-bluefriday-blas-2026 --delete --exclude ".git/*" --exclude ".github/*"
